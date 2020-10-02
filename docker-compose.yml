@@ -4,7 +4,12 @@ services:
         build: ./src
         ports:
             - "5000:5000"
+        volumes:
+            - ./src:/code
+        links:
+            - 'mysql'
     mysql:
+        restart: always
         image: mysql:latest
         container_name: mysql-container
         ports:
@@ -14,8 +19,8 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: TIENDA
-            MYSQL_USER: user
-            MYSQL_PASSWORD: 201504100
+            MYSQL_USER: sapractica
+            MYSQL_PASSWORD: sapractica
 
-# - docker exec -it mk-mysql bash
+# - sudo docker exec -it 75d bash
 # - mysql -u root -p
