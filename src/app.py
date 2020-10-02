@@ -1,5 +1,5 @@
 
-from flask import Flask
+from flask import Flask, render_template
 import mysql.connector
 from mysql.connector import Error
 
@@ -36,4 +36,4 @@ def generarTabla(records):
 def servicio():
     res = conexionBD()
     tabla = generarTabla(res)
-    return tabla
+    return render_template("index.html", result = res)

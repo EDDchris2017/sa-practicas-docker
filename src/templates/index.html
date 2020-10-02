@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Practica 8 SA</title>
+    </head>
+    <body>
+        <h1>Practica 8 Software Avanzado 201504100</h1>
+        <h2> Lista de videojuegos en la tienda </h2>
+        <table>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th> 
+              <th>Genero</th>
+              <th>Plataforma</th>
+            </tr>
+            {% for r in result %}
+            <tr>
+              <td>{{ r[0] }}</td>
+              <td>{{ r[1] }}</td> 
+              <td>{{ r[2] }}</td>
+              <td>{{ r[3] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
