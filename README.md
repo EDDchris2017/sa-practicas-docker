@@ -33,8 +33,8 @@ Se creo un unico enlace en el servicio Web que se contecta al contenedor de mysq
 - "mysql"
 
 #### Volumnes
-- Volumen en Servicio Web para el codigo a ejecutar del aplicacion
-- Volumen de la base de datos para la insercion de datos definidios en el archivo **data.sql** de la maquina local
+- Volumen en Servicio Web para el codigo a ejecutar de la aplicacion
+- Volumen de la base de datos para la insercion de datos definidios en el archivo **data.sql** en la maquina local
 
 #### Definicion de la Base de Datos
 La definicion de la base de datos y los usuarios se realizo en el archivo docker-compose 
