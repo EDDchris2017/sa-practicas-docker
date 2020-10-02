@@ -10,7 +10,7 @@ services:
             - 'mysql'
     mysql:
         restart: always
-        image: mysql:latest
+        image: mariadb
         container_name: mysql-container
         ports:
             - 3306:3306
