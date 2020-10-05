@@ -21,7 +21,7 @@ la que se lanzaron.
 - PIP3 para el manejo de paquetes
 - Flask para creacion de servicios Web
 - Herramienta mysql-connection para realizar conexion a la base de datos MySQL o MariaDB
-- **PUERTO: 5000**
+- **PUERTO: 80**
 
 **Contenedor: Servicio mysql**
 - Base de datos MariaDB 8.0.1
