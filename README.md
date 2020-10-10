@@ -29,6 +29,11 @@ EXPOSE 5000
 COPY . .
 CMD ["flask", "run"]
 ```
+Archivo requirements.txt
+```txt
+flask
+mysql-connector-python==8.0.11
+```
 #### Descripcion de Contenedores
 **Contenedor : Servicio Web**
 - Lenguaje Python 3
