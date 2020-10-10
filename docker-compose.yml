@@ -3,7 +3,7 @@ services:
     web:
         build: ./src
         ports:
-            - "5000:80"
+            - "80:5000"
         volumes:
             - ./src:/code
         links:
@@ -15,12 +15,15 @@ services:
         ports:
             - 3306:3306
         volumes:
-            - ./BD/data.sql:/docker-entrypoint-initdb.d/dump.sql
+            - data-volume:/var/lib/mysql
         environment:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: TIENDA
             MYSQL_USER: sapractica
             MYSQL_PASSWORD: sapractica
+volumes:
+    data-volume:
+
 
 # - sudo docker exec -it 75d bash
 # - mysql -u root -p
